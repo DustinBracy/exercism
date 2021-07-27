@@ -1,17 +1,19 @@
 import re
 
 with open("./README.md", "rb") as f:
-    students = str(f.read())
-    students = re.findall(r"Alice.*Larry", students)[0]
-    students = re.sub(r"\\n-", "", students)
-    students = sorted(re.sub(r"and ", "", students).split(", "))
+    STUDENTS = str(f.read())
+    STUDENTS = re.findall(r"Alice.*Larry", STUDENTS)[0]
+    STUDENTS = re.sub(r"\\n-", "", STUDENTS)
+    STUDENTS = sorted(re.sub(r"and ", "", STUDENTS).split(", "))
+
+PLANT_DICT = {"V": "Violets", "C": "Clover", "R": "Radishes", "G": "Grass"}
 
 
 class Garden:
-    def __init__(self, diagram: str, students: str = students):
+    def __init__(self, diagram: str, students: str = STUDENTS):
         self.students = sorted(students)
-        self.plant_dict = {"V": "Violets", "C": "Clover", "R": "Radishes", "G": "Grass"}
         self.diagram = diagram
+        self.student_plant_dict = dict(zip(self.students, self._student_plants()))
 
     def _student_plants(self) -> list:
         """Returns a list of nested lists of plants sorted by student"""
@@ -19,9 +21,8 @@ class Garden:
         student_plants = [
             row1[i : i + 2] + row2[i : i + 2] for i in range(0, len(row1), 2)
         ]
-        return [[self.plant_dict.get(key) for key in plant] for plant in student_plants]
+        return [[PLANT_DICT.get(key) for key in plant] for plant in student_plants]
 
     def plants(self, student: str) -> list:
-        """Zips sorted plant list and sorted student list, then returns plants for a given student."""
-        student_plant_dict = dict(zip(self.students, self._student_plants()))
-        return student_plant_dict.get(student)
+        """Returns plants for a given student."""
+        return self.student_plant_dict.get(student)
