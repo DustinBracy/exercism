@@ -1,14 +1,10 @@
-const DNA = {
+const DNA_RNA_MAP = {
   G: "C",
   C: "G",
   T: "A",
   A: "U",
 };
 
-export const toRna = (input) => {
-  let output = [];
-  input.split("").map((strand) => {
-    output.push(DNA[strand]);
-  });
-  return output.join("");
+export const toRna = (dna) => {
+  return dna.replace(/[GCTA]/g, (strand) => DNA_RNA_MAP[strand]);
 };
