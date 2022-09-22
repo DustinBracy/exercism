@@ -11,4 +11,7 @@ use (
     ./party-robot
     ./blackjack
     ./need-for-speed
+    ./card-tricks
+    ./animal-magic
+    ./bird-watcher
 )
