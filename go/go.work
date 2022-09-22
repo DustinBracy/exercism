@@ -1,6 +1,7 @@
 go 1.19
 
-use (
+use (   
+    ./test
     ./lasagna
     ./hello-world
     ./weather-forecast
@@ -14,4 +15,6 @@ use (
     ./card-tricks
     ./animal-magic
     ./bird-watcher
+    ./interest-is-interesting
+    ./lasagna-master
 )
