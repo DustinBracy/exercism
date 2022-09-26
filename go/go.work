@@ -18,4 +18,8 @@ use (
     ./interest-is-interesting
     ./lasagna-master
     ./booking-up-for-beauty
+    ./gross-store
+    ./chessboard
+    ./election-day
+    
 )
