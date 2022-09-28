@@ -24,4 +24,5 @@ use (
     ./elons-toys
     ./logs-logs-logs
     ./census
+    ./the-farm
 )
