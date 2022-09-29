@@ -25,4 +25,5 @@ use (
     ./logs-logs-logs
     ./census
     ./the-farm
+    ./parsing-log-files
 )
