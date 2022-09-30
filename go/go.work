@@ -26,4 +26,6 @@ use (
     ./census
     ./the-farm
     ./parsing-log-files
+    ./meteorology
+    ./sorting-room
 )
