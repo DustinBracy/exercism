@@ -28,4 +28,5 @@ use (
     ./parsing-log-files
     ./meteorology
     ./sorting-room
+    ./expenses
 )
