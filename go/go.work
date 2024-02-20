@@ -11,9 +11,11 @@ use (
 	./cars-assemble
 	./census
 	./chessboard
+	./collatz-conjecture
 	./election-day
 	./elons-toys
 	./expenses
+	./gigasecond
 	./gross-store
 	./hello-world
 	./interest-is-interesting
@@ -25,7 +27,10 @@ use (
 	./parsing-log-files
 	./party-robot
 	./raindrops
+	./resistor-color
+	./secret-handshake
 	./sorting-room
+	./strain
 	./the-farm
 	./two-fer
 	./vehicle-purchase
