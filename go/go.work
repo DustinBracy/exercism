@@ -11,6 +11,7 @@ use (
 	./cars-assemble
 	./census
 	./chessboard
+	./circular-buffer
 	./collatz-conjecture
 	./election-day
 	./elons-toys
@@ -19,6 +20,7 @@ use (
 	./gross-store
 	./hello-world
 	./interest-is-interesting
+	./isogram
 	./lasagna
 	./lasagna-master
 	./leap
