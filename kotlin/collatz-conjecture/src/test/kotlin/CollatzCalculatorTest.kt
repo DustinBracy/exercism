@@ -1,5 +1,4 @@
 import kotlin.test.assertEquals
-import kotlin.test.Ignore
 import kotlin.test.Test
 
 class CollatzCalculatorTest {
